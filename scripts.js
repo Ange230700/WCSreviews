@@ -131,3 +131,17 @@ if (document.getElementById("submit")) {
     const form = document.getElementById("submit");
     form.addEventListener("click", submitForm);
 }
+
+// MODULARIZATION
+function includeFile(filePath, fileType = "text/javascript") {
+    // INITIALIZATION
+    let javascriptFile = document.createElement("script");
+    javascriptFile.src = filePath;
+    javascriptFile.type = fileType;
+
+    // ACTION
+    document.getElementsByTagName("head").item(0).appendChild(javascriptFile);
+}
+
+includeFile("/metadataSetOfCharacters.js");
+
