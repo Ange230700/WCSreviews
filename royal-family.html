@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>The Royal Kingdom of Colchis</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Ysabeau+Infant"
+    />
+
+    <!-- ? WHAT IS THE 'async' ATTRIBUTE ABOUT ? -->
+    <script src="script.js" async></script>
+  </head>
+  <body>
+    <nav id="menu"></nav>
+    <h2>The Royal Family</h2>
+    <div class="family-contenair">
+      <div class="family">
+        <img
+          src="/assets/king-591-720.png"
+          alt="King Aeetes"
+          srcset="
+            /assets/king-591-720.png 591w,
+            /assets/king-249-360.png 296w,
+            /assets/king-148-180.png 148w
+          "
+          sizes="
+            (max-width: 720px) 148px,
+            (max-width: 1400px) 296px,
+            591px
+          "
+        />
+        <p>King Aeetes</p>
+      </div>
+      <div class="family">
+        <img
+          src="/assets/princess-391-720.png"
+          alt="Princess Madeas"
+          srcset="
+            /assets/princess-98-180.png   98w,
+            /assets/princess-196-360.png 196w,
+            /assets/princess-391-720.png 391w
+          "
+          sizes="
+            (max-width: 720px) 98px,
+            (max-width: 1400px) 196px,
+            391px
+          "
+        />
+        <p>Princess Madeas</p>
+      </div>
+      <div class="family">
+        <img
+          src="/assets/queen-91-180.png"
+          alt="Queen Idyia"
+          srcset="
+            /assets/queen-91-180.png   91w,
+            /assets/queen-182-360.png 182w,
+            /assets/queen-364-720.png 364w
+          "
+          sizes="
+            (max-width: 720px) 91px,
+            (max-width: 1400px) 182px,
+            364px
+          "
+        />
+        <p>Queen Idyia</p>
+      </div>
+    </div>
+  </body>
+</html>
