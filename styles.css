@@ -1,0 +1,156 @@
+body {
+  padding: 0.5em;
+  font-family: "Ysabeau Infant";
+  background-image: url("/assets/crown-720.png");
+  background-position: bottom;
+  /* FOR PARALLAX EFFECT */
+  background-attachment: fixed;
+}
+
+@media screen and (max-width: 400px) {
+  body {
+    background-image: url("/assets/crown-360.png");
+  }
+}
+
+@media screen and (min-width: 1540px) {
+  body {
+    margin: 0 10%;
+  }
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: red;
+}
+
+nav img {
+  float: left;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  padding: 8px;
+}
+
+.dropbtn {
+  background-color: red;
+  color: yellow;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  left: -80px;
+  background-color: red;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a {
+  color: yellow;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.contenair {
+  position: relative;
+}
+
+.centered {
+  position: absolute;
+  top: 40%;
+  width: 100%;
+  text-align: center;
+}
+
+@media screen and (max-width: 400px) {
+  .centered {
+    top: 0%;
+  }
+}
+
+.bg-transparent {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 0 8px;
+}
+
+/* ROYAL FAMILY */
+.family-contenair {
+  display: flex;
+  justify-content: space-around;
+}
+
+@media screen and (max-width: 400px) {
+  .family-contenair {
+    flex-direction: column;
+  }
+}
+
+.family-contenair > h2 {
+  width: 100%;
+}
+
+.family {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.family p {
+  text-align: center;
+  font-size: 2em;
+}
+
+/* TABLE */
+table {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td,
+th {
+  border: 1px solid #ddd;
+  text-align: center;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #ddd;
+}
+
+/* FORM */
+input {
+  width: 100%;
+}
+
+input[type="submit"] {
+  width: 8em;
+  text-align: center;
+  align-self: flex-end;
+  margin-top: 1em;
+  box-shadow: 5px 5px 3px;
+}
+
+textarea {
+  width: 100%;
+  height: 10em;
+}
